@@ -1,19 +1,15 @@
-//
-//  ViewController.swift
-//  RetainCyclesExamples
-//
-//  Created by Kurro on 1/4/24.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        guard let testVC = storyboard?.instantiateViewController(withIdentifier: "TestViewController") as? TestViewController else { return }
+        
+        present(testVC, animated: true)
+    }
 }
 
