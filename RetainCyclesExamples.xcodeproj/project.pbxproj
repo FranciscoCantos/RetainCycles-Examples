@@ -24,6 +24,7 @@
 		64E2E68C2BBABA210014B5C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64E2E6912BBABA210014B5C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64E2E6972BBABD320014B5C5 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		64E2E6992BBAF8010014B5C5 /* RetainCyclesInClasses.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = RetainCyclesInClasses.playground; path = ../RetainCyclesInClasses.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		64E2E6772BBABA1F0014B5C5 = {
 			isa = PBXGroup;
 			children = (
+				64E2E6992BBAF8010014B5C5 /* RetainCyclesInClasses.playground */,
 				64E2E6822BBABA1F0014B5C5 /* RetainCyclesExamples */,
 				64E2E6812BBABA1F0014B5C5 /* Products */,
 			);
