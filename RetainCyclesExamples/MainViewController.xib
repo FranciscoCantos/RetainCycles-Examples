@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="RetainCyclesExamples" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="ETI-a2-vu1" id="W5p-D0-v6k"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ETI-a2-vu1">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4D-bu-j6M">
+                    <rect key="frame" x="89.000000000000014" y="409" width="215.33333333333337" height="34.333333333333314"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Show test view controller"/>
+                    <connections>
+                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="Sbk-RC-2Rx"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="153" placeholderIntrinsicHeight="21" text="Main view controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3A-Cq-Y4K">
+                    <rect key="frame" x="120" y="359" width="153" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="14c-IB-kDl"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="g4D-bu-j6M" firstAttribute="top" secondItem="h3A-Cq-Y4K" secondAttribute="top" constant="50" id="2p0-7c-LxC"/>
+                <constraint firstItem="14c-IB-kDl" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="h3A-Cq-Y4K" secondAttribute="trailing" id="FH7-E9-L3O"/>
+                <constraint firstItem="g4D-bu-j6M" firstAttribute="centerY" secondItem="ETI-a2-vu1" secondAttribute="centerY" id="NB3-x9-BcT"/>
+                <constraint firstItem="g4D-bu-j6M" firstAttribute="centerX" secondItem="ETI-a2-vu1" secondAttribute="centerX" id="bNx-jR-7or"/>
+                <constraint firstItem="h3A-Cq-Y4K" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="14c-IB-kDl" secondAttribute="leading" id="diz-vw-Wua"/>
+                <constraint firstItem="h3A-Cq-Y4K" firstAttribute="centerX" secondItem="ETI-a2-vu1" secondAttribute="centerX" id="zZV-Tm-jCb"/>
+            </constraints>
+            <point key="canvasLocation" x="844" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

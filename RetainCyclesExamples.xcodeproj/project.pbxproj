@@ -9,22 +9,31 @@
 /* Begin PBXBuildFile section */
 		64E2E6842BBABA1F0014B5C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E2E6832BBABA1F0014B5C5 /* AppDelegate.swift */; };
 		64E2E6862BBABA1F0014B5C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E2E6852BBABA1F0014B5C5 /* SceneDelegate.swift */; };
-		64E2E6882BBABA1F0014B5C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E2E6872BBABA1F0014B5C5 /* ViewController.swift */; };
-		64E2E68B2BBABA1F0014B5C5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 64E2E68A2BBABA1F0014B5C5 /* Base */; };
+		64E2E6882BBABA1F0014B5C5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E2E6872BBABA1F0014B5C5 /* MainViewController.swift */; };
 		64E2E68D2BBABA210014B5C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E2E68C2BBABA210014B5C5 /* Assets.xcassets */; };
 		64E2E6982BBABD320014B5C5 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E2E6972BBABD320014B5C5 /* TestViewController.swift */; };
+		64E2E69B2BBB0D590014B5C5 /* ViewControllersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E2E69A2BBB0D590014B5C5 /* ViewControllersFactory.swift */; };
+		64E2E69D2BBB0E700014B5C5 /* TestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E2E69C2BBB0E700014B5C5 /* TestRepository.swift */; };
+		64E2E69F2BBB0F730014B5C5 /* TestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E2E69E2BBB0F730014B5C5 /* TestInteractor.swift */; };
+		64E2E6A12BBB110B0014B5C5 /* TestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E2E6A02BBB110B0014B5C5 /* TestPresenter.swift */; };
+		64E2E6A32BBB15EA0014B5C5 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64E2E6A22BBB15EA0014B5C5 /* TestViewController.xib */; };
+		64E2E6A52BBB166E0014B5C5 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64E2E6A42BBB166E0014B5C5 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		64E2E6802BBABA1F0014B5C5 /* RetainCyclesExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetainCyclesExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E2E6832BBABA1F0014B5C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64E2E6852BBABA1F0014B5C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		64E2E6872BBABA1F0014B5C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		64E2E68A2BBABA1F0014B5C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64E2E6872BBABA1F0014B5C5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		64E2E68C2BBABA210014B5C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64E2E6912BBABA210014B5C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64E2E6972BBABD320014B5C5 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		64E2E6992BBAF8010014B5C5 /* RetainCyclesInClasses.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = RetainCyclesInClasses.playground; path = ../RetainCyclesInClasses.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		64E2E69A2BBB0D590014B5C5 /* ViewControllersFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersFactory.swift; sourceTree = "<group>"; };
+		64E2E69C2BBB0E700014B5C5 /* TestRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRepository.swift; sourceTree = "<group>"; };
+		64E2E69E2BBB0F730014B5C5 /* TestInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInteractor.swift; sourceTree = "<group>"; };
+		64E2E6A02BBB110B0014B5C5 /* TestPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPresenter.swift; sourceTree = "<group>"; };
+		64E2E6A22BBB15EA0014B5C5 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		64E2E6A42BBB166E0014B5C5 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +50,6 @@
 		64E2E6772BBABA1F0014B5C5 = {
 			isa = PBXGroup;
 			children = (
-				64E2E6992BBAF8010014B5C5 /* RetainCyclesInClasses.playground */,
 				64E2E6822BBABA1F0014B5C5 /* RetainCyclesExamples */,
 				64E2E6812BBABA1F0014B5C5 /* Products */,
 			);
@@ -59,12 +67,17 @@
 			isa = PBXGroup;
 			children = (
 				64E2E6832BBABA1F0014B5C5 /* AppDelegate.swift */,
-				64E2E6852BBABA1F0014B5C5 /* SceneDelegate.swift */,
-				64E2E6872BBABA1F0014B5C5 /* ViewController.swift */,
-				64E2E6972BBABD320014B5C5 /* TestViewController.swift */,
-				64E2E6892BBABA1F0014B5C5 /* Main.storyboard */,
 				64E2E68C2BBABA210014B5C5 /* Assets.xcassets */,
 				64E2E6912BBABA210014B5C5 /* Info.plist */,
+				64E2E6872BBABA1F0014B5C5 /* MainViewController.swift */,
+				64E2E6852BBABA1F0014B5C5 /* SceneDelegate.swift */,
+				64E2E69E2BBB0F730014B5C5 /* TestInteractor.swift */,
+				64E2E6A02BBB110B0014B5C5 /* TestPresenter.swift */,
+				64E2E69C2BBB0E700014B5C5 /* TestRepository.swift */,
+				64E2E6972BBABD320014B5C5 /* TestViewController.swift */,
+				64E2E69A2BBB0D590014B5C5 /* ViewControllersFactory.swift */,
+				64E2E6A22BBB15EA0014B5C5 /* TestViewController.xib */,
+				64E2E6A42BBB166E0014B5C5 /* MainViewController.xib */,
 			);
 			path = RetainCyclesExamples;
 			sourceTree = "<group>";
@@ -128,7 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				64E2E68D2BBABA210014B5C5 /* Assets.xcassets in Resources */,
-				64E2E68B2BBABA1F0014B5C5 /* Base in Resources */,
+				64E2E6A32BBB15EA0014B5C5 /* TestViewController.xib in Resources */,
+				64E2E6A52BBB166E0014B5C5 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,25 +153,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64E2E6882BBABA1F0014B5C5 /* ViewController.swift in Sources */,
+				64E2E6882BBABA1F0014B5C5 /* MainViewController.swift in Sources */,
+				64E2E69B2BBB0D590014B5C5 /* ViewControllersFactory.swift in Sources */,
 				64E2E6842BBABA1F0014B5C5 /* AppDelegate.swift in Sources */,
+				64E2E69F2BBB0F730014B5C5 /* TestInteractor.swift in Sources */,
 				64E2E6982BBABD320014B5C5 /* TestViewController.swift in Sources */,
 				64E2E6862BBABA1F0014B5C5 /* SceneDelegate.swift in Sources */,
+				64E2E6A12BBB110B0014B5C5 /* TestPresenter.swift in Sources */,
+				64E2E69D2BBB0E700014B5C5 /* TestRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		64E2E6892BBABA1F0014B5C5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				64E2E68A2BBABA1F0014B5C5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		64E2E6922BBABA210014B5C5 /* Debug */ = {
@@ -292,7 +299,6 @@
 				INFOPLIST_FILE = RetainCyclesExamples/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -327,7 +333,6 @@
 				INFOPLIST_FILE = RetainCyclesExamples/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

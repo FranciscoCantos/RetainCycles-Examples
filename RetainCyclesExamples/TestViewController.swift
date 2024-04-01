@@ -3,15 +3,26 @@ import UIKit
 
 class TestViewController: UIViewController {
     
+    private var presenter: TestPresenter!
+    
+    init(presenter: TestPresenter) {
+        self.presenter = presenter
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
     override func viewDidLoad() {
-        print("TestViewController - Allocated ✅")
         super.viewDidLoad()
         
         // Uncomment the line below to test a STRONG reference
         //addTimerSTRONG()
         
         // Uncomment the line below to test a WEAK reference. Best solution in this case
-        addTimerWEAK()
+        //addTimerWEAK()
         
         // Uncomment the line below to test a STRONG reference. Worst solution in this case
         //addTimerUnowned()
@@ -21,8 +32,19 @@ class TestViewController: UIViewController {
         print("TestViewController - Deallocated ❌")
     }
     
-    @IBAction func buttonTapped(_ sender: UIButton) {
+    @IBAction func closeButtonTapped(_ sender: UIButton) {
         dismiss(animated: true)
+    }
+    
+    @IBAction func doThingTapped(_ sender: UIButton) {
+        presenter.doPresenterThing { [weak self] in
+            guard let self = self else { return }
+            self.finishDoPresenterThing()
+        }
+    }
+    
+    private func finishDoPresenterThing() {
+        print("FINISH - doThingTapped 1️⃣")
     }
     
     private func printFinish() {

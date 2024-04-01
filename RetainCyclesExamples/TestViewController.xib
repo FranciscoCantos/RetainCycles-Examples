@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestViewController" customModule="RetainCyclesExamples" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="gQ2-63-ZC0" id="f4s-XQ-LRq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gQ2-63-ZC0">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icj-dI-x7v">
+                    <rect key="frame" x="163" y="408.66666666666669" width="67" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Close">
+                        <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="closeButtonTapped:" destination="-1" eventType="touchUpInside" id="DhT-Ue-BeH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86m-md-Gim" userLabel="Do thing">
+                    <rect key="frame" x="152.33333333333334" y="508.66666666666674" width="88.666666666666657" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Do thing">
+                        <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="doThingTapped:" destination="-1" eventType="touchUpInside" id="ovs-Ft-iAz"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="153" placeholderIntrinsicHeight="21" text="Test view controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5r-0V-kea">
+                    <rect key="frame" x="120" y="358.66666666666669" width="153" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="MlQ-id-Mrd"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="T5r-0V-kea" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MlQ-id-Mrd" secondAttribute="leading" id="25w-MR-ws1"/>
+                <constraint firstItem="T5r-0V-kea" firstAttribute="centerX" secondItem="gQ2-63-ZC0" secondAttribute="centerX" id="6hC-qP-Lt3"/>
+                <constraint firstItem="86m-md-Gim" firstAttribute="centerX" secondItem="gQ2-63-ZC0" secondAttribute="centerX" id="L08-NS-itC"/>
+                <constraint firstItem="86m-md-Gim" firstAttribute="centerY" secondItem="gQ2-63-ZC0" secondAttribute="centerY" constant="100" id="Mhv-41-oty"/>
+                <constraint firstItem="icj-dI-x7v" firstAttribute="centerY" secondItem="gQ2-63-ZC0" secondAttribute="centerY" id="NFR-Bh-rQU"/>
+                <constraint firstItem="T5r-0V-kea" firstAttribute="top" secondItem="icj-dI-x7v" secondAttribute="top" constant="-50" id="NZO-a8-Ove"/>
+                <constraint firstItem="MlQ-id-Mrd" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="T5r-0V-kea" secondAttribute="trailing" id="VjU-Mr-UH1"/>
+                <constraint firstItem="icj-dI-x7v" firstAttribute="centerX" secondItem="gQ2-63-ZC0" secondAttribute="centerX" id="tdP-FB-YwO"/>
+            </constraints>
+            <point key="canvasLocation" x="840" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
